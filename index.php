@@ -6,7 +6,7 @@
 		</div>
 	</section>
 
-	<section class="padding" id="link2">
+	<!-- <section class="padding" id="link2">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 banner_ht">
@@ -34,5 +34,5 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 <?php include "footer.php" ?>

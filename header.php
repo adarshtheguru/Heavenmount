@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<header class="active">
+	<!-- <header class="active">
 		<div class="container pos-rel">
 			<div class="row">
 				<div class="pull-left col-2 col-xs-9 brand-logo">
@@ -43,4 +43,4 @@
 				<a href="javascript:;" class="frmclose" data-event-category="Section" data-event-action="Click" data-event-name="Form Close">X</a>
 			</div>
 		</div>
-	</header>
+	</header> -->
