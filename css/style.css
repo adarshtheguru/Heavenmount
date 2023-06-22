@@ -194,7 +194,11 @@ display: flex;
 flex-wrap: wrap
 }
 
-.home-banner{background-image: url('https://dummyimage.com/1366X700/6b6b6b/565659.png&text=banner');}
+.home-banner{
+    background-image: url('../assets/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 #link2{
     background: url('../Path\ 30.png');

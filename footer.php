@@ -14,7 +14,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="mob-footer visible-xs">
+	<!-- <div class="mob-footer visible-xs">
 		<div class="row">
 			<div class="col-6">
 				<a href="tel:+911234567890" class="mob-call-btn"><span class="sell_do_virtual_numbers">+91 1234 5678 90</span></a>
@@ -23,9 +23,10 @@
 				<a href="javascript:;" class="mob_enq_click mob-enq-btn" data-event-category="Footer" data-event-action="Click" data-event-name="Enquire Now">Enquire Now</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<script src="js/jquery.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="js/animate.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
