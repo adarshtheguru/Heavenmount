@@ -25,6 +25,52 @@
 	.col-md-12-5{width: 20%;}
 	.hidden-md{display: none !important;}
   	.visible-md{display: block !important;}
+
+	/* amenities starts  */
+	.zi2-mob {
+		position: relative;
+		z-index: 2;
+	  }
+	
+	  .am-slider-wrapper {
+		padding-bottom: 0px;
+		margin-left: 0px !important;
+	  }
+	
+	  .am-slider-wrapper .custom-arrow {
+		display: flex;
+		position: relative;
+		transform: unset;
+		bottom: 0px;
+		left: unset;
+		z-index: 2;
+		justify-content: center;
+	}
+	
+	.am-slider-wrapper .custom-arrow div {
+	  margin: 0 29px;
+	}
+	
+	  .am-text-cont {
+		margin-top: 75px;
+	  }
+	
+	  .am-build-cont-mob {
+		margin-top: -250px;
+	  }
+	
+	  .spec-slider .slick-slide img {
+		filter: unset;
+	  }
+	
+	  .cloud1 {
+		top: -250px;
+	  }
+	
+	  .cloud2 {
+		top: -200px;
+	  }
+	  /* amenities ends  */
 }
 
 /* Small Devices, Tablets */
@@ -43,8 +89,8 @@
 	.col-sm-12{width: 100%;}
 	.col-sm-12-5{width: 20%;}
 
-	.menu-icon-mobile{display: block;width: 50px;padding: 14px 8px 4px 8px;background-color: #6b6b6b;border-radius: 0px; margin:0;position: absolute;
-		top:15px;right: 0;height: 40px;}
+	.menu-icon-mobile{display: block;width: 50px;padding: 14px 8px 4px 8px;background-color: #000;border-radius: 8px; margin:0;position: absolute;
+		top:15px;right: 0;height: 50px;}
   .menu-icon-mobile>span{display: block;height: 2px;width: 100%; margin-bottom: 4px;background-color: #fff;}
   .menu-icon-mobile.active>span:nth-child(1) {
   	transform: rotate(45deg);
@@ -57,7 +103,12 @@
   .menu-icon-mobile.active>span:nth-child(3) {
   	display: none;
   }
-  header .nav-links{ display: none;position: fixed;top: 94px;left: 0;background-color: #fff; width: 100%;height: 100%;z-index: 999;}
+  .menu-icon-mobile.active header{
+    height: 100%;
+  }
+  /* header .nav-links{ display: none;position: fixed;top: 94px;left: 0;background-color: #fff; width: 100%;height: 100%;z-index: 999;} */
+  header{display: unset;}
+  header .nav-links{ display: none;position: fixed;top: 94px;left: 0;background-color: #fff; width: 100%;height: 300px;z-index: 999;}
   header .nav-links a{display: block !important;text-align: center;line-height: 40px !important;color:#fff ;margin-top: 0px;margin-right: 0px;}
   header .lower .nav-links a:last-child{margin-right: 0px;}
   header .lower .nav-links a{margin-right: 0px;color:#000;}
@@ -79,6 +130,53 @@
 .banner-info {
     font-size: 18px;
 }
+
+/* ---------------Deerstone starts-----------  */
+#deerstone {
+    background: url('../images/deerstone-bg-mob.png'), #E9EBEB;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* min-height: 938px; */
+    margin-top: 0px;
+}
+
+  /* ---------------Deerstone ends-----------  */
+  /* ---------------amenities starts -------------  */
+
+  .am-slide-text {
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  /* .am-slider-wrapper{padding-bottom: 60px;}
+  .am-slider-wrapper .custom-arrow{
+	display: flex;
+	position: absolute;
+	transform: translateX(-50%);
+	bottom: 0px;
+	left: 50%;
+	z-index: 2;
+  } */
+  /* .am-slider-wrapper .custom-arrow div{
+	margin: 0 15px;
+  } */
+  .am-text-cont {
+    margin-top: 20px;
+  }
+
+  .am-build-cont-mob {
+    margin-top: -130px;
+  }
+
+  .cloud1 {
+    top: -180px;
+  }
+
+  .cloud2 {
+    top: -130px;
+  }
+
+  /* ---------------amenities ends -------------  */
 }
 
 /* Extra Small Devices, Phones */
@@ -101,10 +199,10 @@
 	.hidden-xs{display: none !important;}
 	.visible-xs{display: block !important;}
 
-	.menu-icon-mobile{height: 60px;padding:25px 8px 4px 8px;top:-5px;}
-	header{padding:5px 0;}
-  	header .nav-links{padding:10px 0;top:55px;}
-  	header .brand-logo img{width: 90px;}
+	.menu-icon-mobile{height: 60px;padding:25px 8px 4px 8px;top:-5px;right: 10px;}
+	header{padding:15px 0;}
+  	header .nav-links{padding:10px 0;top:72px;}
+  	/* header .brand-logo img{width: 90px;} */
 
   	header .form-container{position: fixed !important;left: 0 !important;right: 0 !important;top: 100% !important; bottom: -100% !important; 
   	width: 100% !important; padding: 30px 0 !important; -ms-transform: translate(0, 0); -webkit-transform: translate(0, 0); transform: translate(0, 0);
@@ -118,10 +216,67 @@
 
   .mob-footer{position: fixed;bottom: 0;left: 0;width: 100%;text-align: center;background-color: #fff;font-size: 14px;font-weight: 600;z-index: 999999;}
   .mob-footer a{display: block;line-height: 30px;}
-  .mob-footer a.mob-enq-btn{background-color: #6b6b6b;color: #fff;text-transform: uppercase;font-weight: 600;font-size: 14px;}
-  .mob-footer a.mob-call-btn{background-color: #fff;color: #6b6b6b;text-transform: uppercase;font-weight: 600;font-size: 14px;}
+  .mob-footer a.mob-enq-btn{background-color: #000;color: #fff;text-transform: uppercase;font-weight: 600;font-size: 14px;}
+  .mob-footer a.mob-call-btn{background-color: #fff;color: #000;text-transform: uppercase;font-weight: 600;font-size: 14px;}
 
   /* .home-banner{background-image: url('https://dummyimage.com/320X480/6b6b6b/565659&text=mobile-banner');} */
+
+  /* -----------------Common css starts -----------------  */
+  .sec-title {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 1.12px;
+  }
+
+  .sec-para {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.56px;
+  }
+
+  .pd-rt-15-mob,
+  .sec-para-pad {
+    padding-right: 15px;
+  }
+  /* ------------------Amenities starts --------------- */
+  .am-build-cont-mob {
+    margin-top: -100px;
+  }
+
+  .cloud1 {
+    top: -130px;
+  }
+
+  .cloud2 {
+    top: -80px;
+  }
+
+  /* --------------Amenities ends -----------------  */
+
+  /* ------------location starts ------------  */
+  .tab-box {
+    width: 100%;
+    height: 348px;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+  }
+.social-links {
+   
+    justify-content: center;
+    align-items: center;
+}
+  .tab-box-head {
+    padding: 5px 10px;
+  }
+
+  .tab-box-cont ul {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* ------------location ends ------------  */
 }
 
 /* Extra Small Devices, Phones */

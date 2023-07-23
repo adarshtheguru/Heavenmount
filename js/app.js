@@ -5,14 +5,14 @@ $(document).ready(function(){
 		var winHT = $(window).height();
 		var winWD = $(window).width();
 		var navHt = $("header").outerHeight();
-		// var bannerHt = winHT - navHt;
+		var bannerHt = winHT - navHt;
 		var bannerHt = winHT;
 		var loc = window.location.pathname.split("/").pop();
 		isFloorplan = 0;
 		isBrochure = 0;
 
 		$('.banner_ht').css('height', bannerHt);
-		$('.section-first').css('margin-top', navHt)
+		// $('.section-first').css('margin-top', navHt)
 
 		$(".goto-home").on("click", function(){
 			$("html,body").animate({
@@ -78,7 +78,119 @@ $(document).ready(function(){
 				}
 			}
 		}
-		
+		console.log("Adarsh");
+
+		// custom js code 
+
+		$(".menu-icons").on("click", function(){
+			$(".menu-icons i").toggleClass("fa-times fa-bars");
+			// $(".menu-icons i").removeClass("fa-bars");
+			// $(".menu-icons i").addClass("fa-times");
+		});
+		$(".nav-mob-list").on("click", function(){
+			$(".nav-mob-list").toggleClass("nav-menu active nav-menu")
+		})
+
+		$('.am-slider').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			// centerMode:true,
+			autoplay: true,
+			autoplaySpeed:1000,
+			infinite: true,
+			// speed:200,
+			// variableWidth: true,
+			// centerPadding: '120px',
+			arrows: true,
+			prevArrow: '#life-style-prev',
+			nextArrow: '#life-style-next',
+			responsive: [
+				// {
+				// 	breakpoint: 1300,
+				// 	settings: {
+				// 		slidesToShow: 3,
+				// 		slidesToScroll: 1,
+				// 		// centerMode:true,
+				// 		// autoplay: false,
+				// 		infinite: true,
+				// 		// speed:200,
+				// 		variableWidth: true,
+				// 		centerPadding: '120px',
+				// 		arrows: true,
+				// 		prevArrow: '#life-style-prev',
+				// 		nextArrow: '#life-style-next',
+				// 	}
+				// },
+				// {
+				// 	breakpoint: 1024,
+				// 	settings: {
+				// 		variableWidth: false,
+				// 		centerPadding: '0px',
+				// 		arrows: true,
+				// 		prevArrow: '#am-l-arrow',
+				// 		nextArrow: '#am-r-arrow',
+				// 	}
+				// },
+				{
+					breakpoint: 1300,
+					settings: {
+						slidesToShow: 2,
+						variableWidth: false,
+						centerPadding: '0px',
+						arrows: true,
+						prevArrow: '#am-l-arrow',
+						nextArrow: '#am-r-arrow',
+					}
+				},
+				{
+					breakpoint: 640,
+					settings: {
+						slidesToShow: 1,
+						variableWidth: false,
+						arrows: true,
+						prevArrow: '#am-l-arrow',
+						nextArrow: '#am-r-arrow',
+					}
+				}
+			]
+		});
+		// if (winWD < 1300) {
+			$("#life-style-next").hover(function () {
+				// debugger;
+				$("#life-style-next").css("cursor", "url(./assets/cursor-arrow.svg),auto")
+			});
+			$("#life-style-prev").hover(function () {
+				// debugger;
+				$("#life-style-prev").css("cursor", "url(./assets/cursor-arrow.svg),auto")
+			});
+	// }
+
+	//tab code
+	$('.social-links li:first-child').addClass('active');
+	$('.tab-box-cont').hide();
+	$('.tab-box-cont:first').show();
+
+	$('.social-links li').click(function () {
+
+		$('.social-links li').removeClass('active');
+		$(this).addClass('active');
+		$('.tab-box-cont').hide();
+
+		var activeTab = $(this).find('a').attr('href');
+		$(activeTab).fadeIn();
+		return false;
+	});
+
+	var get_custom_margin = winWD - $(".container").width();
+	$(".dynamic-margin").css("margin-left", get_custom_margin / 1.4);
+
+	var get_custom_margin = winWD - $(".container").width();
+	$(".dynamic-margin1").css("margin-left", get_custom_margin / 4);
+	$(".dyn-mar").css("margin-left", (get_custom_margin / 2) - 10);
+
+		// if ($(".menu-icons i").hasClass("active")) {
+		// 	$(".menu-icons i").addClass("fa-times");
+		// }
 		//On Scroll - Add class active to active tab
 		$(window).scroll(function(){
 			var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page

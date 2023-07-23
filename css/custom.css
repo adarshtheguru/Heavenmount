@@ -1,5 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Prata&display=swap');
 
+/* -----------------Common css starts here --------------  */
+/* form details  */
+.bro{display: none;}
+/* overview end */
+.rera {
+    font-size: 9px;
+    margin-top: 31px;
+    color: #000;
+    /* text-align: center; */
+}
+.privacy-policy{
+    padding: 153px 0 70px;
+}
+.privacy-policy .sec-para{
+    margin:5px 0
+  }
+.overlay-popup {
+    overflow: auto;
+    position: fixed;
+    height: 100%;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,
+            0, 0, 0.8);
+    z-index: 99999;
+    display: none;
+}
+
+.popup {
+    max-width: 600px;
+    width: 80%;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    margin: 40px auto;
+    margin-top: 100px;
+}
+
+.close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 26px;
+}
+
+.sec-title{
+    /* font-family: 'Prata',serif; */
+    font-family: 'Montserrat';
+    color: #1A1818;
+    font-size: 32px;
+    letter-spacing: 1.28px;
+    line-height: 44px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.sec-para{
+    font-family: 'Montserrat', sans-serif;
+    color: #1A1818;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.sec-para-pad{
+    padding: 0px 0px;
+    padding-right: 65px;
+}
+.img-disc {
+    position: absolute;
+    bottom: 0px;
+    right: 2px;
+    z-index: 3;
+    color: #fff !important;
+    font-size: 9px !important;
+    display: block;
+    padding: 2px;
+    background-color: #0000005b;
+}
+.theme-btn, .theme-btn-bgpink{
+    background-color: #3D2318;
+    color: #fff;
+    font-size: 12px !important;
+    font-family: 'Montserrat',sans-serif;
+    padding: 14px 25px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.48px;
+}
+.theme-btn-bgpink{background-color: #D7C9B9 !important;color: #3D2318 !important;}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    opacity: 0.59;
+    z-index: 1;
+    /* background-color: rgba(0,0,0,0.5); */
+}
+.custom-arrow{
+    cursor: pointer;
+}
+/* -----------------Common css ends here --------------  */
 .font-pop{
     font-family: 'Poppins', sans-serif;
 }
@@ -32,6 +145,197 @@
     font-weight: 600;
     font-size:40px;
 }
+
+/* header nav bar code begins here  */
+.nav-cont{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+/* header nav bar code ends here  */
+
+/* overview section begins here  */
+
+/* overview section changes starts here  */
+#deerstone {
+    background: url('../assets/deerstone-bg.png'),#E9EBEB;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* padding-bottom: 0px; */
+    min-height: 820px;
+    margin-top: -7px;
+}
+.dstone-img-cont{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+/* deerstone section changes ends here  */
+/* overview section ends here  */
+
+/* ---------------Amnities starts ------------  */
+#Amenities{
+    background: transparent linear-gradient(180deg, #EAEBEB 0%, #DCE4E6 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.am-build-cont{
+    position: absolute;
+    right: 0px;
+    top: -275px;
+    z-index: 2;
+    /* transform: translateY(-50%); */
+}
+
+.am-text-cont{
+    margin-top: 130px;
+}
+.am-slider-wrapper{
+    padding-top: 60px;
+}
+/* .am-slider{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 70px;
+    justify-content: center;
+    align-items: center;
+} */
+.am-slide-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #1A1818;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 10px 0px;
+    padding-right: 25px;
+    height: 71px;
+}
+.am-slider .slick-slide{
+    padding: 10px 10px;
+}
+.am-slider-wrapper .custom-arrow{
+    display: none;
+}
+
+/* amenities arrow hover animation starts  */
+#life-style-prev {
+    display: inline-block;
+    width: 50%;
+    height: 310px;
+    background: red;
+    left: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: .6s;
+    z-index: 2;
+}
+#life-style-next {
+    display: inline-block;
+    width: 50%;
+    height: 310px;
+    background: red;
+    right: 0px;
+    left: unset;
+    position: absolute;
+    opacity: 0;
+    transition: .6s;
+    z-index: 2;
+}
+/* #life-style-next, #life-style-prev{
+    cursor: url("images/cursor-arrow.svg"), auto;
+    height: 100px;
+    width: 100px;
+    background: blanchedalmond;
+
+} */
+/* amenities arrow hover animation ends  */
+/* Amenities ends --------------------  */
+
+/* --------------- location starts ---------------  */
+#location{
+    background-color: #E2CEBE;
+}
+.tab-box{
+    width: 492px;
+    height: 301px;
+    border-radius: 12px;
+    background: #F7EADC;
+}
+.tab-box-head{
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    color: #1A1818;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 10px 30px;
+}
+.tab-box-cont{
+    padding-top: 0px;
+}
+.tab-box-cont ul{
+    padding-left: 50px;
+}
+.tab-box-cont ul li{
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 26px;
+    color: #1A1818;
+}
+.tab-box ul li::marker{font-size: 10px;}
+
+.social-links{
+    display: flex;
+    list-style-type: none;
+}
+.social-links a{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #646464;
+    box-shadow: 0 0 20px 10px rgba(100, 100, 100, 0.05);
+    margin: 0 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    top: -30px;
+    transition: transform 0.5s;
+}
+.social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    /* background: #3D2318; */
+    position: absolute;
+    transition: 0.5s;
+}
+.social-links a:hover::after{
+    top: 0;
+}
+.social-links a .fab{
+    position: relative;
+    z-index: 2;
+    /* transition: color 0.5s; */
+}
+/* .social-links a:hover .fab{
+    color: #fff;
+} */
+.social-links a:hover{
+    transform: translateY(-10px);
+}
+/* .social-links li.active .social-links a{
+    background: #3D2318 !important;
+} */
+.tab-box li.active .brown-anm{
+    background-color: #3D2318;
+}
+/* --------------- location ends ---------------  */
 
 /* Text animation code begins here  */
 .revealOnScroll {
@@ -172,3 +476,61 @@
     animation-name: fadeIn
 }
 /* Text animation code ends here  */
+
+/* cloud animation amenities begins here  */
+.cloud-index {
+    opacity: 0.8;
+}
+.cloud1, .cloud2{
+    position: absolute;
+    /* top: -220px; */
+    right: -70px;
+    z-index: 1;
+    animation:cloud-animation;
+    animation-duration:30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-delay: 2s;
+
+}
+.cloud1{top: -290px;}
+.cloud2{top: -240px;}
+
+@keyframes cloud-animation{
+    from{
+        right:0%
+    }
+    to{
+        right:100%
+    }
+}
+/* cloud animation amenities ends here  */
+
+/* cloud animation developer starts here  */
+.cloud3, .cloud4{
+    position: absolute;
+    /* top: -220px; */
+    right: -70px;
+    z-index: 1;
+    animation:cloud-animation;
+    animation-duration:30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition-delay: 2s;
+    /* opacity: 0.6; */
+
+}
+.cloud3{top: -150px;}
+.cloud4{top: -100px;}
+
+@keyframes cloud-animation{
+    from{
+        right:0%
+    }
+    to{
+        right:100%
+    }
+}
+/* cloud animation developer ends here  */
