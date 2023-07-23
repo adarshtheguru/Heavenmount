@@ -129,6 +129,7 @@ p, ul, h1, h2, h3, h4, h5, h6, hr, figure, ol{padding:0;margin:0;font-weight: un
 
 .disptable{display: table;height: 100%;}
 .dispblock{display: block;}
+.disInBlock{display: inline-block;}
 .table-cell{display: table-cell;vertical-align: middle;}
 
 .Yoverflowhidden{overflow-y: hidden;}
@@ -213,10 +214,14 @@ flex-wrap: wrap
 }
 
 .home-banner{
-    background-image: url('../assets/1.jpg');
+    /* background-image: url('../assets/1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
+.home-banner.slide-1{background-image: url('../assets/1.jpg');}
+.home-banner.slide-2{background-image: url('../assets/2.jpg');}
+.home-banner.slide-3{background-image: url('../assets/3.jpg');}
+.home-banner.slide-4{background-image: url('../assets/12.jpg');}
 
 #link2{
     background: url('../Path\ 30.png');
@@ -224,7 +229,7 @@ flex-wrap: wrap
 /*Footer Section*/
 footer{float: left;width: 100%;color:#fff;}
 footer a{color:#fff;}
-footer .upper{background-color: #2b2b2b;padding:10px 0;}
+footer .upper{background-color: #2b2b2b;padding:70px 0;}
 footer .lower{background-color: #121212;padding:10px 0;font-size: 12px;}
 
 			

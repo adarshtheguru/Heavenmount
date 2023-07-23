@@ -1,9 +1,9 @@
 <?php include "header.php" ?>
 	<section class="section-first pos-rel" id="home">
-		<div class="overlay"></div>
+		<!-- <div class="overlay"></div> -->
 		<div class="home-banner-cont font-pop">
 			<div class="banner-title animated fadeInLeft">
-				COMING SOON !
+				Travel Plans
 			</div>
 			<div class="banner-info animated fadeInRight">
 				By Heaven Mount
@@ -13,7 +13,17 @@
 			</div> -->
 		</div>
 		<div class="row">
-			<div class="col-12 col-xs-12 banner_ht bg-cover home-banner">
+			<div class="banner-slider-wrapper">
+				<div class="banner-slider">
+					<div class="col-12 col-xs-12 banner_ht bg-cover home-banner slide-2">
+					</div>
+					<div class="col-12 col-xs-12 banner_ht bg-cover home-banner slide-3">
+					</div>
+					<div class="col-12 col-xs-12 banner_ht bg-cover home-banner slide-4">
+					</div>
+					<div class="col-12 col-xs-12 banner_ht bg-cover home-banner slide-1">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -33,13 +43,13 @@
 						</div>
 						<div class="sec-para pd-rt-15-mob revealOnScroll" data-animation="fadeInRight" data-timeout="400">
 							<p class="pd-bt-20">
-								Heaven Mount is all about travel,Heaven Mount is all about travel,Heaven Mount is all about travel,Heaven Mount is all about travel.
+								Heaven Mount It is not just a travel agency, It is a partner that works with fellow Team to make your dream come true in the best possible places to visit.Group traveling (GIT) solo traveling ( FIT ) or Pleasure packages.
 							</p>
 							<p class="pd-bt-20">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vel deleniti facere recusandae aliquam dignissimos error ad illo corrupti hic eligendi, assumenda pariatur, aspernatur, voluptatem asperiores. Quidem, quibusdam? Voluptatibus, provident.
+								We reach famous tourist spots offbeat destination community standard tourist spot in India we provide everything to give you a memorable pleasure, which calm your hunger to roam.
 							</p>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem soluta minus voluptas magnam aliquam optio modi harum ducimus, doloremque nostrum exercitationem ullam, molestias mollitia sed reprehenderit consequuntur amet sit sunt?
+								We customise packages according to the requirement.We cover Deserts, rain forests, grass land, mountain, beaches, caves, cliff, rivers as well as the unique life form that in habit those environments. National parks, bird Sanctuaries, All Over India .We try to close your trip end with illustrious way. We cover Domestic as well as South East Asia.
 							</p>
 						</div>
 					</div>
@@ -56,7 +66,7 @@
 		<div class="cloud2 cloud-index"><img class="lazy" data-src="./assets/cloud-2.png" alt=""></div>
 		<div class="am-build-cont hidden-md">
 			<div class="pos-rel revealOnScroll" data-animation="fadeIn" data-timeout="300">
-				<img data-src="./assets/am-building.png" alt="" class="img-full hidden-sm lazy">
+				<img data-src="./assets/burj-khalifa-809-745.png" alt="" class="img-full hidden-sm lazy">
 				<div class="img-disc">Artistic Impression</div>
 			</div>
 		</div>
@@ -81,6 +91,11 @@
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta molestias amet nobis, provident quam molestiae officia culpa nam quia, atque, totam qui quibusdam. Ad architecto libero totam modi sed?
 							</p>
 						</div>
+						<div class="mg-tp-30 font-pop">
+							<a href="javascript:;" class="enquire-btn open-custom-form">
+								BOOK NOW
+							</a>
+						</div>
 					</div>
 					<!-- <div class="col-8">&nbsp;</div> -->
 				</div>
@@ -104,20 +119,20 @@
 				</div>
 				<div>
 					<div class="pos-rel">
+						<img data-src="./assets/amenities/assam.jpg" alt="Amenities" class="img-full lazy">
+						<div class="img-disc">Artistic Impression</div>
+					</div>
+					<div>
+						<p class="am-slide-text">North East India</p>
+					</div>
+				</div>
+				<div>
+					<div class="pos-rel">
 						<img data-src="./assets/amenities/manali.webp" alt="Amenities" class="img-full lazy">
 						<div class="img-disc">Artistic Impression</div>
 					</div>
 					<div>
 						<p class="am-slide-text">Manali</p>
-					</div>
-				</div>
-				<div>
-					<div class="pos-rel">
-						<img data-src="./assets/amenities/assam.jpg" alt="Amenities" class="img-full lazy">
-						<div class="img-disc">Artistic Impression</div>
-					</div>
-					<div>
-						<p class="am-slide-text">Assam</p>
 					</div>
 				</div>
 				<div>

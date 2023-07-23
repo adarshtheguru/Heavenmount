@@ -82,6 +82,13 @@ $(document).ready(function(){
 
 		// custom js code 
 
+		// custom form js begins here 
+			$(".open-custom-form, .close-custom").click(function () {
+
+				$(".form-open").slideToggle()
+			})
+		// custom form js ends here 
+
 		$(".menu-icons").on("click", function(){
 			$(".menu-icons i").toggleClass("fa-times fa-bars");
 			// $(".menu-icons i").removeClass("fa-bars");
@@ -91,6 +98,14 @@ $(document).ready(function(){
 			$(".nav-mob-list").toggleClass("nav-menu active nav-menu")
 		})
 
+		$('.banner-slider').slick({
+			slidesToShow:1,
+			slidesToScroll:1,
+			autoplay:true,
+			autoplaySpeed:4000,
+			arrows:false,
+			dots:false
+		});
 		$('.am-slider').slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,

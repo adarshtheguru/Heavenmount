@@ -122,6 +122,9 @@
   #hid-on-mob{
   	display: none !important;
   }
+  .pull-right-desk{
+    float: unset;
+  }
   /* .home-banner{background-image: url('https://dummyimage.com/768X1024/6b6b6b/565659&text=ipad-banner');} */
 
   .banner-title {
@@ -177,6 +180,12 @@
   }
 
   /* ---------------amenities ends -------------  */
+  /* footer upper changes starts here  */
+  .contact-us-wrapper{
+    padding: 20px 0 0;
+    margin-top: 20px;
+    border-top: 1px solid rgb(255, 255, 255, 0.6);
+  }
 }
 
 /* Extra Small Devices, Phones */
