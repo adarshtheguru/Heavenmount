@@ -72,7 +72,7 @@
 		</div>
 		<div class="col-md-12 col-sm-12 visible-md zi2-mob am-build-cont-mob">
 			<div class="pos-rel revealOnScroll" data-animation="fadeIn" data-timeout="400">
-				<img data-src="./assets/am-building-mob.png" alt="" class="img-full lazy">
+				<img data-src="./assets/burj-khalifa-809-745.png" alt="" class="img-full lazy">
 				<div class="img-disc">Artistic Impression</div>
 			</div>
 		</div>

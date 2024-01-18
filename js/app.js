@@ -78,7 +78,6 @@ $(document).ready(function(){
 				}
 			}
 		}
-		console.log("Adarsh");
 
 		// custom js code 
 
